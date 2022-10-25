@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+ min-height: 100vh; 
+ text-align: center;   
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.566);
+    height: 10vh;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-size: 5vw;
+        color: rgb(255, 255, 255);
+        text-shadow: rgba(0, 0, 0, 0.651) 5px 5px;
+    }
+}
+
+//FRONTPAGE
+.frontpage{
+background-image: url('../Images/anne.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 100vh;
+display: flex;
+width: 50%;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.about{
+    width: 50%;
+    background-color: rgb(225, 225, 224);
+.text{
+    width: 50%;
+    margin: 15vh auto;
+}  
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.555);
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 8vh;
+
+        li{
+            list-style: none;
+            
+            a{
+                color: white;
+                font-size: 1.5em;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.aboutme{
+    min-height: 90vh; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mytext{
+    width: 80%;
+    margin: 10vh auto;   
+}  
+
+            /////////*** MEDIA QUERIES ***/////////
+
+//DESKTOP
+
+@media screen and (min-width: 1200px) {
+    .container{
+        padding: 15em;
+    }
+}
+
+//TABLET
+
+@media screen and (min-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+    
+    h1{
+        font-size: 3vw;
+    }
+    }
+    nav{
+    display: none;
+    }  
+}
+
+//MOBILE
+@media screen and (max-width: 768px) {
+.frontpage{
+    width: 100%;
+    h1{
+        font-size: 8vw;
+    }
+    }
+
+    .aboutme{
+        h1{
+            font-size: 8vw;
+        }
+    }
+
+    .about{
+        display: none;
+    }
+}
+
